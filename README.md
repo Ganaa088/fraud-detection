@@ -37,7 +37,14 @@ The challenge is to **catch fraud while minimizing false alerts** that overwhelm
 
 5. **Deployment Awareness**  
    - Saved trained models and scaler with `joblib`.  
-   - Produced a comparison table for business decision-making.  
+   - Produced a comparison table for business decision-making.
+
+## 📉 Precision–Recall Trade-off
+
+The Random Forest model achieves a strong balance between **recall** (fraud caught) and **precision** (alerts that are correct).  
+The chart below shows how precision increases as recall decreases when the decision threshold is adjusted.
+
+![Precision–Recall vs Threshold](images/precision_recall_curve.png)
 
 ---
 
@@ -58,6 +65,8 @@ The challenge is to **catch fraud while minimizing false alerts** that overwhelm
 **Business Takeaway:**  
 A tuned Random Forest reduces false alerts by >90% while still catching >80% of fraud cases.  
 This makes fraud alerts more trustworthy for analysts and reduces unnecessary customer disruptions.
+
+
 
 ---
 
